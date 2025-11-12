@@ -22,16 +22,24 @@ function App() {
     <>
       <h1>API</h1>
 
-      <div className="card">
-        <div className="img"></div>
-        <div className="dati_attrice">
-          <h3>nome</h3>
-          <p>anno_nascita</p>
-          <p>nazionalita</p>
-          <p>biografia</p>
-          <p>riconoscimenti</p>
-        </div>
-      </div>
+      {
+        attrici.map(attrice => (
+          <div key={attrice.id} className="card">
+            <div className="card_image">
+              <img src={attrice.image} alt={attrice.name} />
+            </div>
+            <div className="dati_attrice">
+              <h3>{attrice.name}</h3>
+              <p>{attrice.birth_year}</p>
+              <p>{attrice.nationality}</p>
+              <p>{attrice.biography}</p>
+              <p>{attrice.awards}</p>
+            </div>
+          </div>
+        ))
+      }
+
+
     </>
   )
 }
