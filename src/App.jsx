@@ -24,25 +24,31 @@ function App() {
     <>
       <h1>API</h1>
 
-      {/* map the array to create a card for every object (actresses) */}
-      {
-        actresses.map(actress => (
-          <div key={actress.id} className="card">
-            <div className="card_image">
-              <img src={actress.image} alt={actress.name} />
-            </div>
-            <div className="dati_actress">
-              <h3>{actress.name}</h3>
-              <p>{actress.birth_year}</p>
-              <p>{actress.nationality}</p>
-              <p>{actress.biography}</p>
-              <p>{actress.awards}</p>
-            </div>
-          </div>
-        ))
-      }
+      <div className="container">
 
+        <div className="row">
 
+          {/* map the array to create a card for every object (actresses) */}
+          {
+            actresses.map(actress => (
+              <div key={actress.id} className="card">
+                <div className="card_image">
+                  <img src={actress.image} alt={actress.name} />
+                </div>
+                <div className="actress_details">
+                  <h2 className="actress_name">{actress.name}</h2>
+                  <p className="actress_birth">{actress.birth_year}</p>
+                  <p className="actress_nation">{actress.nationality}</p>
+                  <p className="actress_bio">{actress.biography}</p>
+                  <p className="actress_awards">{actress.awards}</p>
+                </div>
+              </div>
+            ))
+          }
+
+        </div>
+
+      </div>
     </>
   )
 }

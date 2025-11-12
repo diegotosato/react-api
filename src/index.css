@@ -2,31 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1rem;
+  row-gap: 2rem;
 }
 
 .card {
-  width: 200px;
-  background-color: rosybrown;
-  border: 1px solid royalblue;
+  width: calc((100% / 4) - 1.5rem);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 5px gray;
 }
 
 .card_image {
-  height: 200px;
+  padding: 1rem;
 }
 
 .card_image img {
+  aspect-ratio: 1 / 1;
   width: 100%;
   height: 100%;
-  background-color: black;
-  margin-right: 1rem;
   object-fit: cover;
   object-position: top left;
+  border-radius: 10px;
 }
 
-.dati_actress {
+.actress_details {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
+}
+
+.actress_details .actress_name {
+  color: brown;
+}
+
+.actress_birth,
+.actress_awards {
+  font-weight: bold;
+}
+
+.actress_details .actress_nation {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.actress_bio {
+  margin: 0.7rem 0;
 }
