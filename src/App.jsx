@@ -49,6 +49,11 @@ function App() {
 
 
 
+  const awards = []
+
+
+
+  console.log(typeof (awards));
 
 
   return (
@@ -73,6 +78,15 @@ function App() {
                   <p className="card_details_nation">{actor.nationality}</p>
                   <p className="card_details_bio">{actor.biography}</p>
                   <p className="card_details_awards">{actor.awards}</p>
+                  <p className="card_details_known">Known for:
+                    <ul>
+                      {
+                        (actor.most_famous_movies || actor.known_for).map((movie, i) => (
+                          <li key={i}>{movie}</li>
+                        ))
+                      }
+                    </ul>
+                  </p>
                 </div>
               </div>
             ))
