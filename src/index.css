@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.card {
+  background-color: rosybrown;
+  border: 1px solid royalblue;
+  display: flex;
+  width: 250px;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  margin-right: 1rem;
+}
+
+.dati_attrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
