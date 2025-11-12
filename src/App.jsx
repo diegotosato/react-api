@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import Card from "./Components/Card"
+import Footer from "./Components/Footer"
 
 function App() {
   //AjaxCall#1 endpoint into a variable
@@ -59,7 +60,7 @@ function App() {
 
   return (
     <>
-      {/* Actress */}
+
       <h1>All Actors</h1>
 
       <div className="container">
@@ -78,10 +79,7 @@ function App() {
         </div>
 
       </div>
-
-
-
-
+      <Footer />
 
     </>
   )

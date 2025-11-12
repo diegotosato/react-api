@@ -5,6 +5,13 @@
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 5rem;
+  color: gold;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -72,4 +79,17 @@
 .card_details_known ul li {
   list-style: none;
   font-weight: normal;
+}
+
+footer {
+  background-color: black;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
 }
