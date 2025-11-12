@@ -1,10 +1,12 @@
+import CardImage from "./CardImage";
+
 export default function Card({ actor }) {
     return (
         <>
             <div className="card">
-                <div className="card_image">
-                    <img src={actor.image} alt={actor.name} />
-                </div>
+
+                <CardImage actor={actor} />
+
                 <div className="card_details">
                     <h2 className="card_details_name">{actor.name}</h2>
                     <p className="card_details_birth">{actor.birth_year}</p>
