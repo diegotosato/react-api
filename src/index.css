@@ -39,27 +39,27 @@
   border-radius: 10px;
 }
 
-.actress_details {
+.card_details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
 }
 
-.actress_details .actress_name {
+.card_details .card_details_name {
   color: brown;
 }
 
-.actress_birth,
-.actress_awards {
+.card_details_birth,
+.card_details_awards {
   font-weight: bold;
 }
 
-.actress_details .actress_nation {
+.card_details .card_details_nation {
   font-weight: bold;
   font-style: italic;
 }
 
-.actress_bio {
+.card_details_bio {
   margin: 0.7rem 0;
 }
